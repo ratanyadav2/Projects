@@ -1,0 +1,189 @@
+header{
+    display: flex;
+    font-family: Arial;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 24px;
+
+}
+nav{
+    font-size: 18px;
+}
+.shopper{
+    font-weight: bold;
+    font-size: 26px;
+
+}
+nav span{
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+.shortcut-icons{
+    font-size: 20px;
+    
+}       
+.shortcut-icons{
+    margin-right: 20px;
+}
+article {
+    text-align: center;
+    background-color: black;
+    color:white;
+    padding: 15px;
+    font-size: 18px;
+}
+.bi-lightning-fill {
+    color:gold;
+}
+
+/* Here we started the main section of the Website  */
+
+main{
+    height: 550px;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    margin: 1px;
+
+
+}
+
+.men-fashion{
+    background-image: url("../public/images/men-fashion.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center ;
+    opacity: 0.7;
+
+}
+.women-fashion{
+    background-image: url("../public/images/woman-fashion.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.7;
+}
+.kids-fashion{
+    background-image: url("../public/images/kid-fashion.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.7;
+
+}
+.women-fashion:hover , .men-fashion:hover , .kids-fashion:hover{
+    opacity: 1;
+}
+.brand-title{
+    font-size :50px;
+    color: white;
+    font-family: Arial black;
+    text-shadow: 2px 2px 2px black;
+
+}
+.btn{
+    background-color: white;
+    color: black;
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-family: Arial;
+
+}
+.row1{
+    text-align: center;
+    margin: 50px;
+}
+.email{
+    display: inline-block;
+    background-color: grey;
+    padding: 20px;
+    width: 200px;
+    text-align: left;
+}
+
+.text{
+    font-size: 30px;
+    margin-bottom: 40px;
+    
+ }
+ .subscribe-btn{
+    font-family: Arial;
+    padding: 20px;
+    width: 100px;
+    display:inline-block;
+    background-color: rgba(128, 128, 128, 0.521);
+    opacity: 1;
+ }
+
+ .subscribe-btn:hover{
+    opacity: 0.7;
+ }
+
+ .row2{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+ }
+ .brand-footer{
+    font-family: Arial;
+    font-size: 25px;
+ }
+ aside{
+    margin-top: 10px;
+    font-size: 15px;
+ }
+
+ .support-content{
+    
+    margin-top: 10px;
+ }
+
+ .support-content a:link{
+    color: grey;
+    text-decoration: dotted;
+ }
+
+ .shop-content{
+    margin: 10px;
+ }
+
+ .shop-content a:link{
+    color: grey;
+    text-decoration: dotted;
+ }
+ .company-content{
+    margin: 10px;
+ }
+
+ .company-content a:link{
+    color: grey;
+    text-decoration: dotted;
+ }
+
+.contact-content{
+    margin: 10px;
+ }
+
+ .contact-content a:link{
+    color: grey;
+    text-decoration: dotted;
+ }
+
+ .row3{
+    font-size: 10px;
+    text-align: center;
+    color: grey;
+    margin: 20px;
+ }

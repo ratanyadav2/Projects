@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Data From Json</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function bodyload(){
+            fetch("../data/product.json")
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(product){
+                document.getElementById("imgProduct").src= product.image;
+                document.getElementById("lblTitle").innerHTML = product.title;
+                document.getElementById("lblRating").innerHTML = `<span class="badge bg-success"> ${product.rating.rate} <span class="bi bi-star-fill"></span> </span> <span class="fw-bold ms-2 text-secondary"> ${product.rating.ratings.toLocaleString('en-in')} ratings & ${product.rating.reviews.toLocaleString('en-in')} reviews </span> `;
+                document.getElementById("lblPrice").innerHTML = "&#8377;" + product.price.toLocaleString('en-in');
+                product.offers.map(function(offer){
+                    var li =document.createElement("li");
+                    li.className = "my-3 bi bi-tag-fill text-success";
+                    li.innerHTML = `<span class="text-secondary"> ${offer}</span>`;
+                    document.getElementById("lstOffer").appendChild(li);
+                });
+            })
+            .catch(function(error){
+                console.log(error);
+            })
+            .finally(function(){
+                console.log('Request End');
+            })
+        }
+    </script>
+</head>
+<body class="container-fluid" onload="bodyload()">
+    <div class="row mt-4">
+        <div class="col-3">
+            <img id="imgProduct" width="100%">
+        </div>
+        <div class="col-9">
+            <div id="lblTitle" class="fs-4"></div>
+            <div id="lblRating" class="my-2"></div>
+            <div id="lblPrice" class="my-4 h3"></div>
+            <div>
+                <h5>Availble Offers</h5>
+                    <ul class="list-unstyled" id="lstOffer">
+
+                    </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

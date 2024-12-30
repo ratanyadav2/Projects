@@ -1,0 +1,12 @@
+{
+    "title": "Apple iPhone 15 (Black, 256 GB)",
+    "price": 78999,
+    "rating": {"rate":4.8, "ratings":228290, "reviews":8157},
+    "offers": [
+        "Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
+        "Bank OfferFlat ₹450 off on HDFC Bank Credit Card EMI Txns on 3 months tenure, Min. Txn Value: ₹5000T&C",
+        "Bank Offer10% off up to ₹750 on HDFC Bank Credit Card EMI on 6 and 9 months tenure. Min. Txn Value: ₹5000T&C",
+        "Special PriceGet extra ₹10901 off (price inclusive of cashback/coupon)T&C"
+    ],
+    "image": "../public/images/iphone-15.jpg"
+}

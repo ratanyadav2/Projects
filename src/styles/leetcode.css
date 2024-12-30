@@ -1,0 +1,36 @@
+.col1{
+    font-family: bold;
+    padding: 10px;
+}
+
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 2px;
+}
+
+.col1 span{
+    padding: 2px;
+}
+
+.col2{
+    padding: 10px;
+
+}
+.col2 span{
+    padding: 2px;
+}
+
+.col3{
+    padding: 10px;
+}
+
+.col3 span {
+    padding: 2px;
+}
+
+/* Row11 and Row22 started  */

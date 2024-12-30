@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document </title>
+    <script>
+        function bodyload(){
+            const now = new Date();
+            console.log(`Page loaded on ${now.toLocaleTimeString()}`);
+
+        }
+
+        function Loadclick(){
+            var http = new XMLHttpRequest();
+            http.open("GET", "../data/help.txt", true);
+            http.send();
+            http.onreadystatechange = function(){
+                if(http.readyState==4){
+                    document.getElementById("container").innerHTML = http.responseText;  
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <button onclick="Loadclick()">Load Help</button>
+    <div>
+        <pre id="container">
+
+        </pre>
+    </div>
+</body>
+</html>

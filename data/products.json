@@ -1,0 +1,12 @@
+[
+    {
+        "title" : "Apple Iphone 15",
+        "price" : 79999,
+        "img" : "../public/images/iphone-15.jpg"
+    },
+    {
+        "title" : "Apple Iphone 16",
+        "price" : 89999,
+        "img" : "../public/images/iphone-15.jpg"
+    }
+]
